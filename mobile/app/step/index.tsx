@@ -6,7 +6,10 @@ import { Header } from '../../components/header'
 export default function Step() {
     return (
         <View>
-            <Header />
+            <Header
+                step='Passo 1'
+                title='Vamos começar'
+            />
         </View>
     )
 }
