@@ -26,8 +26,6 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>
 
 export default function Step() {
-
-
     const { control, handleSubmit, formState: { errors, isValid } } = useForm<FormData>({
         resolver: zodResolver(schema)
     })
@@ -46,7 +44,6 @@ export default function Step() {
 
         router.push("/create")
     }
-
 
     return (
         <View style={styles.container}>

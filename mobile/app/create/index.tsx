@@ -12,6 +12,7 @@ import { colors } from '../../constants/colors'
 import { Header } from '@/components/header'
 import { Select } from '../../components/input/select'
 import { useDataStore } from '../../store/data'
+import { router } from 'expo-router'
 
 
 const schema = z.object({
@@ -55,7 +56,9 @@ export default function Create() {
             gender: data.gender,
             objective: data.objective
         })
+        router.push("/nutrition")
     }
+
     return (
         <View style={styles.container}>
 
